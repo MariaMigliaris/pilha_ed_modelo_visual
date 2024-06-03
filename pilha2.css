@@ -1,29 +1,151 @@
-body {
-    
-}
-.container {
-    
-    width: auto;
-    height: 50vh;
-    padding: 10px;
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@800&family=Roboto:wght@300;500;900&family=Zilla+Slab:ital,wght@0,700;1,400&display=swap');
 
-}
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .bandeirinhas{
+      height: 74%;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+    }
 
-conteudo {
-    position:absolute; 
-    left:12px;
-    top:58px;
-    width:715px;
-    height:211px;
-    color: #999;
-}
+  main{
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+      flex-direction: column;
+      background: linear-gradient(180deg, #FFA133 0%, #D94E00 100%);
+      z-index: 999;
+    }
 
-.tabela {
-    color: white ;
-    background-color: #000;
+  #conteudo{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      padding-top: 10rem;
+      width: 100%;
+      height:50vh;
+      z-index: 999;
+  }
 
-}
+  .botoes{
+    display: flex;
+    gap: 3rem;
+    position: relative;
+    bottom: 4rem;
+  }
 
-.tabela td {
-    background-color: green;
-}
+  button{
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+
+  }
+
+  .toco {
+    width: 16rem;
+    height: 4.3rem;
+    background-size: cover;
+    background-image: url('toco.png');
+    display: inline-block;
+    position: absolute; 
+  }
+  
+  @keyframes pulsar {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.25); /* Aumenta o tamanho */
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .fogo {
+    width: 7rem;
+    height: 35rem;
+    background-image: url('fogo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 11;
+    position: relative;
+    bottom: 5rem;
+    animation: pulsar 1.5s infinite; /* Aplica a animação */
+  }
+  
+  
+  .toco:nth-child(1) {
+    transform: rotate(0deg);
+    background-image: url('toco2.png');
+    z-index: 1;
+  }
+  
+  .toco:nth-child(2) {
+    transform: rotate(-8deg);
+    background-image: url('toco.png');
+    z-index: 2;
+  }
+  
+  .toco:nth-child(3) {
+    transform: rotate(16deg);
+    background-image: url('toco2.png');
+    z-index: 3;
+  }
+
+  .toco:nth-child(4) {
+    transform: rotate(-20deg);
+    background-image: url('toco.png');
+    z-index: 4;
+  }
+
+  .toco:nth-child(5) {
+    transform: rotate(12deg);
+    background-image: url('toco2.png');
+    z-index: 5;
+  }
+
+  .toco:nth-child(6) {
+    transform: rotate(-10deg);
+    background-image: url('toco.png');
+    z-index: 6;
+  }
+
+  .toco:nth-child(7) {
+    transform: rotate(18deg);
+    background-image: url('toco2.png');
+    z-index: 7;
+  }
+
+  .toco:nth-child(8) {
+    transform: rotate(-14deg);
+    background-image: url('toco.png');
+    z-index: 8;
+  }
+
+  .toco:nth-child(9) {
+    transform: rotate(4deg);
+    background-image: url('toco2.png');
+    z-index: 9;
+  }
+
+  .toco:nth-child(10) {
+    transform: rotate(-2deg);
+    background-image: url('toco.png');
+    z-index: 10;
+  }
+  
+  
